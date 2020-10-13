@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+*{
+	box-sizing: border-box;
+ }
+
+body{
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+}
+
+header {
+	background-image: url("/img/aparecida-nutri.png");
+	height: 220px;
+}
+
+header .container:before{
+	content: '';
+	display:inline-block;
+	height: 100%;
+	vertical-align:	middle;
+}
+
+.container{
+	width: 60%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+#titulo-form, .titulo-tabela-pacientes {
+	font: 3.5rem 'Lobster', cursive;
+	color: #666462;
+	margin-top: 20px;
+}
+
+section{
+	margin: 2em 0;
+	overflow: hidden;
+}
+
+section h2{
+	font-size: 3em;
+	display: block;
+	padding-bottom: .5em;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: .5em;
+}
+
+
+label{
+	color: #555;
+	display: inline-block;
+	margin-bottom: .2em;
+	margin-right: 15px;
+}
+
+#filtrar-tabela {
+	width: 200px;
+	height: 35px;
+	margin-bottom: 15px;
+}
+
+table{
+	width: 100%;
+	margin-bottom : .5em;
+    table-layout: fixed;
+}
+
+th{
+	font-weight: bold;
+	background-color: #f17070;
+	color: #ffffff;
+}
+
+td, th {
+	padding: .7em;
+	margin: 0;
+	border: 1px solid #cccccc;
+	text-align: center;
+}
+
+.campo{
+	margin: 0;
+	padding-bottom: 1em;
+	width: 100%;
+	border: 1px solid #ccc;
+	padding: .7em;
+	width: 100%;
+}
+
+.campo-medio{
+	display: inline-block;
+	padding-right: .5em;
+	width: 100%;
+}
+
+.grupo{
+	width: 32%;
+	display: inline-block;
+	padding: 15px 0px 0px 0px;
+}
+
+.campo-um, .campo-dois {
+	margin-right: 1.5%;
+}
+
+button{
+	padding: .5em 2em;
+	border: 0;
+	border-bottom: 3px solid;
+	font-size: 1.2em;
+	cursor: pointer;
+	margin: 0;
+	margin-top: -3px;
+	color: #fff;
+	background-color:#f17070;
+	border-color: #e22f2f;
+	border-radius: 10px;
+	width: 30%;
+    display: block;
+    clear: both;
+    margin: 10px 0px;
+
+}
+
+button:active{
+	margin-top:0px;
+	border: 0;
+}
+
+button[disabled=disabled], button:disabled {
+    background-color: gray;
+	border-color: darkgray;
+
+}
+
+#buscar-pacientes, #adicionar-paciente {
+	margin-top: 30px;
+}
+
+.campo-invalido{
+	border: 1px solid red;
+}
+
+#titulo-form {
+	margin-top: 30px;
+}
+
+#mensagem-erro {
+	color: red;
+}
+
+
+/* === Atributos adicionados pelo JS === */
+.paciente-invalido {
+	background-color: lightcoral;
+}
+
+#mensagens-erro { 
+	color: red;
+	margin-bottom: 20px;
+}
+
+#mensagens-erro li {
+	line-height: 1.2rem;
+}
+
+.fadeOut {
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.invisivel {
+	display: none;
+}
